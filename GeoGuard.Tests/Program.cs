@@ -39,6 +39,17 @@ internal static partial class Program
             return 0;
         }
 
+        if (args.Contains("--geo-live"))
+        {
+            // Живая проверка сервисов геолокации (нужен интернет, в обычный набор тестов не входит).
+            using var geo = new GeoLocationService();
+            var answers = await geo.LookupAsync(CancellationToken.None);
+            Console.WriteLine($"Ответили сервисов: {answers.Count} из 3");
+            foreach (var answer in answers)
+                Console.WriteLine($"  {answer.CountryCode} | {answer.CountryName ?? "—"}");
+            return answers.Count == 3 ? 0 : 1;
+        }
+
         var dropIndex = Array.IndexOf(args, "--render-adapters");
         if (dropIndex >= 0 && dropIndex + 1 < args.Length)
         {

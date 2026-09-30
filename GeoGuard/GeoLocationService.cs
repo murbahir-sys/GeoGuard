@@ -18,6 +18,7 @@ public sealed class GeoLocationService : IGeoLookup
 {
     private sealed record Provider(string Url, Func<JsonElement, GeoResult?> Parse);
 
+    // Только сервисы, чьи условия разрешают бесплатное использование, в том числе коммерческое, без ключа.
     private static readonly Provider[] Providers =
     [
         new("https://ipwho.is/?fields=success,ip,country,country_code",
@@ -26,10 +27,8 @@ public sealed class GeoLocationService : IGeoLookup
                 : null),
         new("https://api.country.is/",
             root => Read(root, "country", null, "ip")),
-        new("http://ip-api.com/json/?fields=status,country,countryCode,query",
-            root => GetString(root, "status") == "success"
-                ? Read(root, "countryCode", "country", "query")
-                : null),
+        new("https://get.geojs.io/v1/ip/country.json",
+            root => Read(root, "country", "name", "ip")),
     ];
 
     private readonly HttpClient _http;

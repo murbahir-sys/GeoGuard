@@ -4,7 +4,7 @@
 ; Файл сохранён в UTF-8 с BOM — без него русские строки читаются неправильно.
 
 #ifndef AppVersion
-  #define AppVersion "1.0.4"
+  #define AppVersion "1.0.5"
 #endif
 #ifndef SourceDir
   #define SourceDir "..\dist\app"
