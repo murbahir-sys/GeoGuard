@@ -10,8 +10,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-0078D6" alt="Windows 10 | 11 x64">
-  <img src="https://img.shields.io/badge/версия-1.0.2-2563EB" alt="Версия 1.0.2">
-  <img src="https://img.shields.io/badge/лицензия-бесплатно-16A34A" alt="Лицензия: бесплатно">
+  <img src="https://img.shields.io/badge/версия-1.0.3-2563EB" alt="Версия 1.0.3">
+  <img src="https://img.shields.io/badge/лицензия-PolyForm%20Noncommercial%201.0.0-16A34A" alt="Лицензия: PolyForm Noncommercial 1.0.0">
   <img src="https://img.shields.io/badge/исходный%20код-открыт-6B7280" alt="Исходный код открыт">
 </p>
 
@@ -55,7 +55,7 @@ GeoGuard следит за вашим внешним IP-адресом и раз
 
 ## Установка
 
-1. Скачайте `GeoGuard-Setup-1.0.2.exe` со страницы [релизов](https://github.com/murbahir-sys/GeoGuard/releases/latest).
+1. Скачайте `GeoGuard-Setup-1.0.3.exe` со страницы [релизов](https://github.com/murbahir-sys/GeoGuard/releases/latest).
 2. Запустите установщик и подтвердите запрос прав администратора.
 
    > Установщик не подписан цифровой подписью, поэтому Windows может показать окно
@@ -197,7 +197,7 @@ Windows SmartScreen и некоторые антивирусы насторож�
 **Как проверить установщик:**
 
 - сравните контрольную сумму скачанного файла с указанной в описании релиза:
-  `Get-FileHash .\GeoGuard-Setup-1.0.2.exe` в PowerShell;
+  `Get-FileHash .\GeoGuard-Setup-1.0.3.exe` в PowerShell;
 - или соберите программу сами:
   1. Установите .NET SDK 10 и Inno Setup 6:
      `winget install Microsoft.DotNet.SDK.10` и `winget install JRSoftware.InnoSetup`.
@@ -209,12 +209,23 @@ Windows SmartScreen и некоторые антивирусы насторож�
 
 ## Лицензия
 
-GeoGuard распространяется **бесплатно**, исходный код открыт для проверки и сборки для себя.
-Продавать программу и распространять изменённые версии без разрешения автора нельзя.
-Условия — в файле [LICENSE.txt](LICENSE.txt).
+GeoGuard распространяется по лицензии
+[**PolyForm Noncommercial 1.0.0**](https://polyformproject.org/licenses/noncommercial/1.0.0) — бесплатно
+для некоммерческого использования.
 
-В программе используются: среда выполнения .NET (© Microsoft, MIT), изображения флагов
-[flagpedia.net](https://flagpedia.net); установщик создан с помощью [Inno Setup](https://jrsoftware.org/isinfo.php).
+| Можно | Нельзя |
+|---|---|
+| пользоваться программой для себя, в учёбе, исследованиях, хобби | продавать программу |
+| пользоваться в некоммерческих организациях (образовательных, благотворительных, научных, государственных) | использовать в коммерческих целях — в бизнесе, в работе коммерческой организации, за вознаграждение |
+| изучать исходный код, собирать и изменять программу | распространять программу и её версии без текста лицензии и сведений об авторе |
+| делиться программой и изменёнными версиями — тоже некоммерчески | |
+
+Полный текст и краткое изложение по-русски — в [LICENSE.txt](LICENSE.txt); юридическую силу имеет
+английский текст лицензии. По вопросам коммерческого использования обращайтесь к автору через эту страницу.
+
+Сторонние компоненты — среда выполнения .NET (© .NET Foundation, MIT), изображения флагов
+[flagpedia.net](https://flagpedia.net), установщик [Inno Setup](https://jrsoftware.org/isinfo.php) —
+перечислены в [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
 
 ---
 

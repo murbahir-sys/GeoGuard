@@ -1,75 +1,98 @@
-﻿ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ НА ПРОГРАММУ GEOGUARD
+﻿GeoGuard
 
-© 2026 Савицкий Святослав
+Required Notice: Copyright © 2026 Савицкий Святослав (https://github.com/murbahir-sys/GeoGuard)
 
-Устанавливая или используя программу GeoGuard (далее — «Программа»), а также
-используя её исходный код, вы соглашаетесь с условиями этого соглашения. Если
-вы не согласны с ними, не устанавливайте и не используйте Программу.
+GeoGuard распространяется по лицензии PolyForm Noncommercial License 1.0.0.
+Её полный текст приведён ниже на английском языке; официальная версия:
+https://polyformproject.org/licenses/noncommercial/1.0.0
 
-1. БЕСПЛАТНОЕ ИСПОЛЬЗОВАНИЕ
+КРАТКО ПО-РУССКИ
+(неофициальное изложение для удобства; юридическую силу имеет только английский текст лицензии)
 
-1.1. Программа распространяется бесплатно. Разрешается бесплатно скачивать,
-     устанавливать и использовать Программу на любом количестве компьютеров.
+- Программу можно бесплатно использовать, изучать, собирать из исходного кода и изменять
+  в некоммерческих целях: для личного использования, учёбы, исследований, хобби, а также
+  в некоммерческих организациях (благотворительных, образовательных, научных, государственных).
+- Программой и её изменёнными версиями можно делиться — тоже только в некоммерческих целях,
+  передавая вместе с ними текст этой лицензии и строку «Required Notice» выше.
+- Продавать программу и использовать её в коммерческих целях нельзя. По вопросам коммерческого
+  использования обращайтесь к автору через страницу программы на GitHub.
+- Программа предоставляется «как есть», без гарантий; автор не несёт ответственности за
+  последствия её использования.
 
-1.2. Разрешается бесплатно передавать другим лицам неизменённый установщик
-     Программы при условии сохранения этого соглашения и сведений об авторе.
+Сведения о сторонних компонентах — в файле THIRD-PARTY-NOTICES.txt.
 
-2. ИСХОДНЫЙ КОД
+================================================================================
 
-2.1. Исходный код Программы опубликован, чтобы любой желающий мог проверить,
-     что делает Программа, и убедиться в её безопасности.
+# PolyForm Noncommercial License 1.0.0
 
-2.2. Разрешается просматривать и изучать исходный код, собирать из него
-     Программу для личного использования и проверки, а также вносить в него
-     изменения для личного использования.
+<https://polyformproject.org/licenses/noncommercial/1.0.0>
 
-2.3. Разрешается предлагать исправления и улучшения автору (например, через
-     запросы на изменение в репозитории Программы).
+## Acceptance
 
-3. ОГРАНИЧЕНИЯ
+In order to get any license under these terms, you must agree to them as both strict obligations and conditions to all your licenses.
 
-3.1. Запрещается:
-     - продавать Программу, её исходный код или собранные из него версии,
-       а также брать плату за их распространение;
-     - распространять изменённые версии Программы или продукты, созданные на
-       основе её исходного кода, без письменного разрешения автора;
-     - выдавать Программу или её части за собственную разработку, удалять или
-       изменять сведения об авторе и это соглашение.
+## Copyright License
 
-4. ОТКАЗ ОТ ГАРАНТИЙ
+The licensor grants you a copyright license for the software to do everything you might do with the software that would otherwise infringe the licensor's copyright in it for any permitted purpose.  However, you may only distribute the software according to [Distribution License](#distribution-license) and make changes or new works based on the software according to [Changes and New Works License](#changes-and-new-works-license).
 
-4.1. Программа и её исходный код предоставляются «как есть», без каких-либо
-     гарантий, явных или подразумеваемых, в том числе гарантий пригодности для
-     определённой цели.
+## Distribution License
 
-4.2. Программа определяет страну по внешнему IP-адресу с помощью сторонних
-     сервисов геолокации и управляет запуском приложений и правилами
-     Брандмауэра Windows. Определение страны может быть неточным или
-     недоступным, а реакция на смену сети происходит не мгновенно. Программа
-     снижает, но не исключает риск того, что приложение из списка будет
-     работать вне выбранной страны.
+The licensor grants you an additional copyright license to distribute copies of the software.  Your license to distribute covers distributing the software with changes and new works permitted by [Changes and New Works License](#changes-and-new-works-license).
 
-4.3. Автор не несёт ответственности за любой прямой или косвенный ущерб,
-     связанный с использованием Программы или невозможностью её
-     использования, в том числе за потерю данных, закрытие приложений,
-     блокировку учётных записей в сторонних сервисах и нарушения работы сети.
+## Notices
 
-5. СТОРОННИЕ КОМПОНЕНТЫ
+You must ensure that anyone who gets a copy of any part of the software from you also gets a copy of these terms or the URL for them above, as well as copies of any plain-text lines beginning with `Required Notice:` that the licensor provided with the software.  For example:
 
-5.1. В состав Программы входят компоненты сторонних правообладателей,
-     которые распространяются на их собственных условиях:
-     - среда выполнения .NET — © Microsoft Corporation, лицензия MIT;
-     - изображения флагов стран — flagpedia.net;
-     - установщик создан с помощью Inno Setup — © Jordan Russell, Martijn Laan.
+> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
 
-5.2. Для определения страны Программа обращается к сервисам ipwho.is,
-     api.country.is и ip-api.com. Эти сервисы видят ваш внешний IP-адрес.
-     Никаких других данных Программа не передаёт.
+## Changes and New Works License
 
-6. ПРОЧЕЕ
+The licensor grants you an additional copyright license to make changes and new works based on the software for any permitted purpose.
 
-6.1. Автор вправе изменять условия этого соглашения для новых версий
-     Программы.
+## Patent License
 
-6.2. Во всём, что не урегулировано этим соглашением, стороны
-     руководствуются применимым законодательством.
+The licensor grants you a patent license for the software that covers patent claims the licensor can license, or becomes able to license, that you would infringe by using the software.
+
+## Noncommercial Purposes
+
+Any noncommercial purpose is a permitted purpose.
+
+## Personal Uses
+
+Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, is use for a permitted purpose.
+
+## Noncommercial Organizations
+
+Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution is use for a permitted purpose regardless of the source of funding or obligations resulting from the funding.
+
+## Fair Use
+
+You may have "fair use" rights for the software under the law. These terms do not limit them.
+
+## No Other Rights
+
+These terms do not allow you to sublicense or transfer any of your licenses to anyone else, or prevent the licensor from granting licenses to anyone else.  These terms do not imply any other licenses.
+
+## Patent Defense
+
+If you make any written claim that the software infringes or contributes to infringement of any patent, your patent license for the software granted under these terms ends immediately. If your company makes such a claim, your patent license ends immediately for work on behalf of your company.
+
+## Violations
+
+The first time you are notified in writing that you have violated any of these terms, or done anything with the software not covered by your licenses, your licenses can nonetheless continue if you come into full compliance with these terms, and take practical steps to correct past violations, within 32 days of receiving notice.  Otherwise, all your licenses end immediately.
+
+## No Liability
+
+***As far as the law allows, the software comes as is, without any warranty or condition, and the licensor will not be liable to you for any damages arising out of these terms or the use or nature of the software, under any kind of legal claim.***
+
+## Definitions
+
+The **licensor** is the individual or entity offering these terms, and the **software** is the software the licensor makes available under these terms.
+
+**You** refers to the individual or entity agreeing to these terms.
+
+**Your company** is any legal entity, sole proprietorship, or other kind of organization that you work for, plus all organizations that have control over, are under the control of, or are under common control with that organization.  **Control** means ownership of substantially all the assets of an entity, or the power to direct its management and policies by vote, contract, or otherwise.  Control can be direct or indirect.
+
+**Your licenses** are all the licenses granted to you for the software under these terms.
+
+**Use** means anything you do with the software requiring one of your licenses.

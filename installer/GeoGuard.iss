@@ -4,7 +4,7 @@
 ; Файл сохранён в UTF-8 с BOM — без него русские строки читаются неправильно.
 
 #ifndef AppVersion
-  #define AppVersion "1.0.2"
+  #define AppVersion "1.0.3"
 #endif
 #ifndef SourceDir
   #define SourceDir "..\dist\app"
@@ -70,6 +70,7 @@ Name: "desktopicon"; Description: "Создать значок на рабоче
 [Files]
 Source: "{#SourceDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\THIRD-PARTY-NOTICES.txt"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExe}"; Comment: "Защита по стране и VPN"

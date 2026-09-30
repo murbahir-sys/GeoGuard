@@ -43,7 +43,7 @@ internal sealed class AboutForm : Form
             Font = Theme.Base, ForeColor = Theme.Text, AutoSize = true,
             MaximumSize = new Size(Inner, 0), Margin = new Padding(0, 0, 0, 10),
         });
-        about.Flow.Controls.Add(Theme.Hint($"{AppInfo.Copyright}. Распространяется бесплатно, исходный код открыт для проверки; условия — в LICENSE.txt в папке программы.", Inner, 4));
+        about.Flow.Controls.Add(Theme.Hint($"{AppInfo.Copyright}. Бесплатно для некоммерческого использования (PolyForm Noncommercial 1.0.0, см. LICENSE.txt).", Inner, 4));
         var source = new LinkLabel
         {
             Text = "Исходный код: " + AppInfo.RepositoryUrl.Replace("https://", ""),
