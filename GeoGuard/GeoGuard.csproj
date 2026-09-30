@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>GeoGuard</RootNamespace>
+    <AssemblyName>GeoGuard</AssemblyName>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+
+    <!-- Сведения о программе: свойства exe, «О программе», установщик -->
+    <ApplicationIcon>Assets\GeoGuard.ico</ApplicationIcon>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <AssemblyTitle>GeoGuard — приложения только в выбранной стране</AssemblyTitle>
+    <Product>GeoGuard</Product>
+    <Company>Савицкий Святослав</Company>
+    <Authors>Савицкий Святослав</Authors>
+    <Copyright>© 2026 Савицкий Святослав</Copyright>
+    <Description>GeoGuard — приложения из списка работают только в выбранной стране и только через VPN</Description>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\GeoGuard.ico" LogicalName="GeoGuard.ico" />
+    <EmbeddedResource Include="Assets\Logo.png" LogicalName="Logo.png" />
+    <!-- Флаги стран (flagpedia.net / flagcdn.com), 48x36, имя — двухбуквенный код: Flags.de.png -->
+    <EmbeddedResource Include="Assets\Flags\*.png" LogicalName="Flags.%(Filename)%(Extension)" />
+    <InternalsVisibleTo Include="GeoGuard.Tests" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeoGuard\GeoGuard.csproj" />
+    <!-- Только чтобы собрать «жертву» вместе с тестами; сборка на неё не ссылается. -->
+    <ProjectReference Include="..\GeoGuard.TestVictim\GeoGuard.TestVictim.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+</Project>

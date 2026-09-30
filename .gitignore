@@ -1,0 +1,9 @@
+bin/
+obj/
+dist/
+*.user
+.vs/
+
+# Данные для входа — никогда не коммитить
+github.txt
+*.token
