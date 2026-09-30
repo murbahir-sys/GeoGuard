@@ -4,7 +4,7 @@
 ; Файл сохранён в UTF-8 с BOM — без него русские строки читаются неправильно.
 
 #ifndef AppVersion
-  #define AppVersion "1.0.3"
+  #define AppVersion "1.0.4"
 #endif
 #ifndef SourceDir
   #define SourceDir "..\dist\app"
@@ -41,8 +41,8 @@ DisableProgramGroupPage=yes
 UninstallDisplayIcon={app}\{#AppExe}
 OutputDir={#OutputDir}
 SetupIconFile=..\GeoGuard\Assets\GeoGuard.ico
-; Лицензия показывается перед установкой; файл в UTF-8 с BOM.
-LicenseFile=..\LICENSE.txt
+; Перед установкой показывается пояснение по-русски и текст лицензии MIT; файл в UTF-8 с BOM.
+LicenseFile=LicensePage.txt
 WizardStyle=modern
 WizardImageFile=WizardLarge.bmp
 WizardSmallImageFile=WizardSmall.bmp
