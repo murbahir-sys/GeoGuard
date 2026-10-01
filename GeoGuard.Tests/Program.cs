@@ -117,6 +117,7 @@ internal static partial class Program
             SettingsFormApplyBehavior();
             CountryFlagsWork();
             StatusPillTexts();
+            await GeoServiceRateLimits();
             TabsFitWithoutScrolling();
             FirewallComReadOnly();
             NetworkSignatureIsStable();

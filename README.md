@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20x64-0078D6" alt="Windows 10 | 11 x64">
-  <img src="https://img.shields.io/badge/версия-1.0.5-2563EB" alt="Версия 1.0.5">
+  <img src="https://img.shields.io/badge/версия-1.0.6-2563EB" alt="Версия 1.0.6">
   <img src="https://img.shields.io/badge/лицензия-MIT-16A34A" alt="Лицензия: MIT">
   <img src="https://img.shields.io/badge/исходный%20код-открыт-6B7280" alt="Исходный код открыт">
 </p>
@@ -55,7 +55,7 @@ GeoGuard следит за вашим внешним IP-адресом и раз
 
 ## Установка
 
-1. Скачайте `GeoGuard-Setup-1.0.5.exe` со страницы [релизов](https://github.com/murbahir-sys/GeoGuard/releases/latest).
+1. Скачайте `GeoGuard-Setup-1.0.6.exe` со страницы [релизов](https://github.com/murbahir-sys/GeoGuard/releases/latest).
 2. Запустите установщик и подтвердите запрос прав администратора.
 
    > Установщик не подписан цифровой подписью, поэтому Windows может показать окно
@@ -133,6 +133,8 @@ WireGuard, OpenVPN, AmneziaVPN, Proton VPN, NordVPN, Mullvad, WireSock, корп
 - Для определения страны GeoGuard обращается к сервисам **ipwho.is**, **api.country.is** и **get.geojs.io**.
   Эти сервисы видят ваш внешний IP-адрес. Никаких других данных программа не передаёт,
   телеметрии нет.
+- Запросы бережные: к ipwho.is (бесплатно — 1000 запросов в сутки) — не чаще раза в 2 минуты,
+  а сервис, попросивший подождать, программа не беспокоит 15 минут.
 - Настройки хранятся только на вашем компьютере: `%AppData%\GeoGuard\settings.json`.
 
 ## Удаление
@@ -197,7 +199,7 @@ Windows SmartScreen и некоторые антивирусы насторож�
 **Как проверить установщик:**
 
 - сравните контрольную сумму скачанного файла с указанной в описании релиза:
-  `Get-FileHash .\GeoGuard-Setup-1.0.5.exe` в PowerShell;
+  `Get-FileHash .\GeoGuard-Setup-1.0.6.exe` в PowerShell;
 - или соберите программу сами:
   1. Установите .NET SDK 10 и Inno Setup 6:
      `winget install Microsoft.DotNet.SDK.10` и `winget install JRSoftware.InnoSetup`.
